@@ -150,8 +150,6 @@ spec:
           - name: build-modelcar
             image: quay.io/hayesphilip/modelcar-builder:latest
             imagePullPolicy: Always
-            securityContext:
-              runAsUser: 1001
             script: |
               #!/bin/bash
               set -e
